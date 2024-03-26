@@ -47,6 +47,23 @@ public class Main1 {
         Iterator<Map.Entry<String, Integer>> iterator3= mapa.entrySet().iterator();
         while(iterator3.hasNext()){
             System.out.println(iterator3.next());
-        };
+        }
+
+        // Versão abreviada for-each (utiliza o iterator da collection implicitamente)
+
+        // Iterando um Set
+
+        for(Integer num : conjunto){
+            System.out.println(num);
+        }
+
+        // Iterando um Map
+
+        for(Map.Entry<String, Integer> par : mapa.entrySet()){
+            String key = par.getKey();
+            Integer value = par.getValue();
+            System.out.println(key + " : "+ value);
+        }
+
     }
 }
