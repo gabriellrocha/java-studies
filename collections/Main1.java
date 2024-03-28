@@ -58,8 +58,9 @@ public class Main1 {
         }
 
         // Iterando um Map
+        // Objeto Entry representa um par key-value em um Map
 
-        for(Map.Entry<String, Integer> par : mapa.entrySet()){
+        for(Map.Entry<String, Integer> par : mapa.entrySet()){ // retorna um Set de Entry
             String key = par.getKey();
             Integer value = par.getValue();
             System.out.println(key + " : "+ value);
